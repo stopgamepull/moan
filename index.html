@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoraXXX</title>
+    <link rel="stylesheet" href="css/styles1.css">
+    <link rel="shortcut icon" href="images/FAV.jpg" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="social">
+            <a href="https://x.com/SoraXXXhub" class="twitter"><img class="twitterimg" src="images/twitter.png" alt=""></a>
+        </div>
+        <div class="ca-container">
+            <span class="ca-text">CA: </span>
+            <button class="copy-btn" id="copy-ca">
+                <i class="fas fa-copy"></i> Copy
+            </button>
+        </div>
+        <h1 class="title">Sora<span class="orange">XXX</span></h1>
+    </header>
+
+    <div class="generator-container">
+        <div class="generator-box">
+            <input type="text" id="prompt-input" placeholder="Describe your image...">
+            <div class="controls">
+                <select id="style-select">
+                    <option value="cartoon">Cartoon</option>
+                    <option value="anime">Anime</option>
+                    <option value="lego">LEGO</option>
+                    <option value="pixel">Pixel Art</option>
+                    <option value="realistic">Realistic</option>
+                </select>
+                <select id="size-select">
+                    <option value="square">Square</option>
+                    <option value="portrait">Portrait</option>
+                    <option value="landscape">Landscape</option>
+                </select>
+                <button id="generate-btn">Generate</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="ad-container">
+        <div class="ad-placeholder">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ad, quibusdam eveniet officiis cupiditate ducimus iure quae culpa magni repudiandae necessitatibus, illum ipsum nesciunt numquam? Minus quam consectetur architecto minima!</div>
+    </div>
+
+    <h2 class="gallery-title">Created Images</h2>
+    <div class="gallery" id="image-gallery">
+        <!-- Images will be loaded here by JavaScript -->
+    </div>
+
+    <div class="modal" id="prompt-modal">
+        <div class="modal-content">
+            <span class="close-btn">×</span>
+            <h3>Prompt used:</h3>
+            <p id="modal-prompt-text"></p>
+            <div class="modal-image-container">
+                <img id="modal-image" src="" alt="Generated image">
+            </div>
+        </div>
+    </div>
+
+    <footer class="copyright">
+        <div class="copyright-line"></div>
+        <p>SoraXXX, 2025</p>
+      </footer>
+      
+      <!-- Модальное окно проверки возраста -->
+      <div class="age-modal" id="ageModal">
+        <div class="age-modal-content">
+          <div class="age-modal-icon">🔞</div>
+          <h2>Age Verification</h2>
+          <p>This website contains adult content and is only suitable for those 18 years or older.</p>
+          <p>By entering, you confirm you are at least 18 years of age.</p>
+          <div class="age-buttons">
+            <button class="age-btn yes-btn">I am 18 or older</button>
+            <button class="age-btn no-btn">I am under 18</button>
+          </div>
+        </div>
+      </div>
+
+    <script src="js/scripts.js"></script>
+
+</body></html>
